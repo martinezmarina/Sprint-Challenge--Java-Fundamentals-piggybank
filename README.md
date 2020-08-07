@@ -23,9 +23,29 @@ Commit your code regularly and meaningfully. This helps both you (in case you ev
 Be prepared to demonstrate your understanding of this week's concepts by answering questions on the following topics. You might prepare by writing down your own answers before hand.
 
 1. Explain how you took advantage of Java's Object Oriented approach to solve the sprint challenge.
+    Java OOP concepts let us create working methods and variables, then re-use all or part of them without compromising security. 
+    For example in my Coin model I had created getters and setters for all my variables, my variables are set to private, however the getter methods are public, meaning other classes have access to the getters.
+    That is how I can get the variables I need in my CoinController; by using methods created in my Coin model.
+    
+    Four pillars of OOP:
+    Abstraction: hiding internal details and showing functionality
+    Encapsulation: binding all code and data together, feilds are kept private and accessed through methods(getters and setters)
+    Polymorphism: same word with different meanings, same method with different parameters resulting in different behaviors, and a child class can implement a method differently than the parent.
+    Inheritance: A new class can inherit properties from another class.
+    
 2. Explain the three steps needed to run a Java application (using the JDK) including what each step does and how those step correlate to running a JavaScript application.
+    First is to compile the source code to bytecode that will run on the JVM.(javac) 
+    Next archive the class files into a .jar file; cvfe(create a new archive, generate verbose output, specify the jar output file, and set the main class as Entry point).
+    Lastly you execute the program by launching the JVM (java), tell it we are using .jar file (-jar) and give it the name of the application.
+
 3. Explain how Java being a strongly typed language affected you solution.
+    Actually this was quite nice. 
+    Java being a strongly typed language means that when I create variables I have to tell Java what type of variable it is before I use it, it requires more forethought and planning when setting up your code.
+
 4. Can you explain the differences between Abstract Classes and Interfaces including how they are used in your application?
+    Abstract classes function as a parent class that shares methods or feilds that all children classes have in common; and that way the group of classes just need to implement what is different in each class.
+    Interfaces are similar in that classes can inherit from interfaces but thats where the similarities end.
+    Interfaces give method headers but not actual implementations, classes can inherit from multiple interfaces but only from one abstract class. Interfaces should not contain fields(variable inside a class).
 
 ## Instructions
 
